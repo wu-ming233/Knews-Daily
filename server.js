@@ -9,13 +9,16 @@ const corsRouter = require('./controllers/corsRouter')
 const externalRouter = require('./controllers/externalRouter')
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGODB)
-  .then(() => {
-    console.log('connected to MongoDB')
-  })
-  .catch((error) => {
-    console.log('error connection to MongoDB:', error.message)
-  })
+async function connectDB() {
+  mongoose.connect(process.env.MONGODB)
+    .then(() => {
+      console.log('connected to MongoDB')
+    })
+    .catch((error) => {
+      console.log('error connection to MongoDB:', error.message)
+    })
+}
+
 
 app.use(express.static('build'))
 
@@ -44,6 +47,8 @@ function unknownEndpoint(request, response, next) {
 
 app.use(unknownEndpoint);
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server running on port ${process.env.PORT}`);
+connectDB().then(() => {
+  app.listen(process.env.PORT, () => {
+    console.log(`Server running on port ${process.env.PORT}`);
+  })
 })
