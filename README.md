@@ -27,7 +27,7 @@ it via [knews-daily.cyclic.app](https://knews-daily.cyclic.app/)
 
 ## Showcase :tv:
 
-![Screenshot](https://cdn.discordapp.com/attachments/772859425261748255/1058878416289546340/showcase-1.png)
+![Screenshot](https://cdn.discordapp.com/attachments/772859425261748255/1058972197458292827/showcase2.png)
 
 
 ## API Reference :notebook_with_decorative_cover:
