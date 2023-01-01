@@ -10,7 +10,7 @@ _knewspaper_ everyday, including information all across the web that we _knew_ y
 want to read. 
 
 The deployment can be viewed under the [environments tab](https://github.com/wu-ming233/Knews-Daily/deployments). Or, you could also access
-it via [knews-daily.cyclic.app](knews-daily.cyclic.app/)
+it via [knews-daily.cyclic.app](https://knews-daily.cyclic.app/)
 ## Features :star:
 
 - Weather and temperature info based on your location
